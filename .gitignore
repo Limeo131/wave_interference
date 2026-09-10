@@ -4,7 +4,6 @@
 # Policy (pre-publication, PUBLIC repo):
 #   - Publish only the HM model code skeleton (models/, plot/, HM scripts, fortran source).
 #   - Do NOT publish anything that reveals unpublished results or the manuscript:
-#       * .kiro/          (steering files contain full unpublished conclusions)
 #       * manuscript/     (paper drafts and figures)
 #       * output/         (all data, figures, and analysis reports)
 #       * ERA5 observational analysis code + data
@@ -14,11 +13,12 @@
 # ERA5 scripts, and manuscript figures as appropriate).
 # =============================================================================
 
-# --- Unpublished project internals (steering, hooks, config) ---
-.kiro/
+
+
 
 # --- Manuscript (drafts + figures) ---
 manuscript/
+.kiro/
 
 # --- All generated output: data, figures, reports (regenerable / unpublished) ---
 output/
