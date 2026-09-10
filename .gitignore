@@ -1,0 +1,57 @@
+# =============================================================================
+# .gitignore for the Holton-Mass interference project
+#
+# Policy (pre-publication, PUBLIC repo):
+#   - Publish only the HM model code skeleton (models/, plot/, HM scripts, fortran source).
+#   - Do NOT publish anything that reveals unpublished results or the manuscript:
+#       * .kiro/          (steering files contain full unpublished conclusions)
+#       * manuscript/     (paper drafts and figures)
+#       * output/         (all data, figures, and analysis reports)
+#       * ERA5 observational analysis code + data
+#   - Do NOT publish large binary / regenerable data products.
+#
+# After the paper is accepted, relax these rules (e.g. release output data,
+# ERA5 scripts, and manuscript figures as appropriate).
+# =============================================================================
+
+# --- Unpublished project internals (steering, hooks, config) ---
+.kiro/
+
+# --- Manuscript (drafts + figures) ---
+manuscript/
+
+# --- All generated output: data, figures, reports (regenerable / unpublished) ---
+output/
+
+# --- Notebooks (exploratory; large; may contain unpublished results) ---
+notebooks/
+
+# --- ERA5 observational analysis code (unpublished until paper accepted) ---
+scripts/era5/
+
+# --- Large / binary data products (never belong in git) ---
+*.npz
+*.nc
+*.grib
+*.grb
+*.hdf
+*.h5
+
+# --- Python caches / build artifacts ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
